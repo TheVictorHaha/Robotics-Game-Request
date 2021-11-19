@@ -238,6 +238,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -535,11 +536,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8412214589568353142, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.37
+      value: 2.77
       objectReference: {fileID: 0}
     - target: {fileID: 8412214589568353142, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.37
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 8412214589568353142, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -654,6 +655,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.3275604, y: -0.3018056, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -830,6 +832,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
