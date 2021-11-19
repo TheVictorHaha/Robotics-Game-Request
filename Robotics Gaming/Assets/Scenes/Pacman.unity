@@ -238,6 +238,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -270,6 +271,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3862584728657857861, guid: aa6f75555d1b70c4ab20a256dc919965, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862584728657857861, guid: aa6f75555d1b70c4ab20a256dc919965, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862584728657857861, guid: aa6f75555d1b70c4ab20a256dc919965, type: 3}
+      propertyPath: m_Color.r
+      value: 0.12797439
+      objectReference: {fileID: 0}
     - target: {fileID: 5155160319644996878, guid: aa6f75555d1b70c4ab20a256dc919965, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -351,6 +364,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3862584728657857861, guid: aa6f75555d1b70c4ab20a256dc919965, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862584728657857861, guid: aa6f75555d1b70c4ab20a256dc919965, type: 3}
+      propertyPath: m_Color.g
+      value: 0.041251317
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862584728657857861, guid: aa6f75555d1b70c4ab20a256dc919965, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8962535
+      objectReference: {fileID: 0}
     - target: {fileID: 5155160319644996878, guid: aa6f75555d1b70c4ab20a256dc919965, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -491,6 +516,18 @@ PrefabInstance:
     - target: {fileID: 4513626636281002626, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960033513510733021, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960033513510733021, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5533991
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960033513510733021, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8007177846531890010, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
       propertyPath: m_Name
@@ -634,7 +671,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.6997323, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -653,7 +690,8 @@ Transform:
   m_GameObject: {fileID: 954704038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.3275604, y: -0.3018056, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalScale: {x: 0.17248, y: 0.17248, z: 1.7248}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -727,6 +765,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4513626636281002626, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
       propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960033513510733021, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960033513510733021, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960033513510733021, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
+      propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8007177846531890010, guid: 5d8916f3e9df4c64fb359217e8135f0c, type: 3}
@@ -830,6 +880,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
