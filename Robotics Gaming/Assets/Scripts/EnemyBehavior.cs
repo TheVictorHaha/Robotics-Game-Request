@@ -11,6 +11,6 @@ public class EnemyBehavior : MonoBehaviour
     }
     void Update()
     {
-        transform.LookAt(target.transform, transform.up);
+        transform.LookAt(target.transform, target.transform.up);
     }
 }
