@@ -5,7 +5,8 @@ using UnityEngine;
 public class SpaceMovement : MonoBehaviour
 {
     private Vector3 speedVector;
-    public float speed = 5.0f;
+    public float speed = 0.01f;
+    public float maxSpeed = 5.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,7 @@ public class SpaceMovement : MonoBehaviour
         bool input = false;
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            if (speedVector.y < 10)
+            if (speedVector.y < maxSpeed)
             {
                 speedVector += Vector3.up * speed;
             }
@@ -32,7 +33,7 @@ public class SpaceMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            if (speedVector.x < 10)
+            if (speedVector.x < maxSpeed)
             {
                 speedVector += Vector3.right * speed;
             }
@@ -40,7 +41,7 @@ public class SpaceMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            if (speedVector.x > -10)
+            if (speedVector.x > -maxSpeed)
             {
                 speedVector += Vector3.left * speed;
             }
@@ -48,7 +49,7 @@ public class SpaceMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            if (speedVector.y > -10)
+            if (speedVector.y > -maxSpeed)
             {
                 speedVector += Vector3.down * speed;
             }
@@ -56,8 +57,8 @@ public class SpaceMovement : MonoBehaviour
         }
         if (!input)
         {
-            speedVector *= (1 - speed / 100);
-            if (speedVector.magnitude <= 0.1) speedVector = new Vector3(0, 0);
+            speedVector *= (1 - speed / 10);
+            if (speedVector.magnitude <= 0.01) speedVector = new Vector3(0, 0);
         }
     }
 }
