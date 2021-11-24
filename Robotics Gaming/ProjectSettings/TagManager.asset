@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Up
   - Side
+  - Platform
   layers:
   - Default
   - TransparentFX
