@@ -54,10 +54,10 @@ public class SpaceMovement : MonoBehaviour
             }
             input = true;
         }
-        /*if (!input)
+        if (!input)
         {
             speedVector *= (1 - speed / 100);
             if (speedVector.magnitude <= 0.1) speedVector = new Vector3(0, 0);
-        }*/
+        }
     }
 }
