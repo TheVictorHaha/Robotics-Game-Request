@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class test : MonoBehaviour
+public class CastlevaniaMovement : MonoBehaviour
 {
     public float jumpForce = 5.0f;
     public float speed = 5.0f;
