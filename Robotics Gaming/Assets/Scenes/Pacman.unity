@@ -319,6 +319,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4473496711412302954, guid: 75863a1e95afea26ea2d4952326434ce, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7530554045713800700, guid: 75863a1e95afea26ea2d4952326434ce, type: 3}
       propertyPath: m_Name
       value: Spawn Guide
@@ -342,9 +346,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7817f38fd4f72df9b28d1a05c08f7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numEnemies: 10
+  numEnemies: 7
   enemy: {fileID: 7408729842926873298, guid: 372f5cf7c760917c7859a32fe443a7d1, type: 3}
   enemies: []
+--- !u!114 &1018525216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018525212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45737b9380b59713a85ed6edc8e8b81b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 9077402440057428510, guid: f404a911688ccfa49a6e1608ac9d9488, type: 3}
+  shotInterval: 3
 --- !u!1 &1933192070
 GameObject:
   m_ObjectHideFlags: 0

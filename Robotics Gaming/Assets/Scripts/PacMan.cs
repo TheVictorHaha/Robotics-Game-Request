@@ -82,7 +82,6 @@ public class PacMan : MonoBehaviour
         float rad = GetComponent<CircleCollider2D>().radius;
         rad = speed * Time.deltaTime;
         rad = 0.05f;
-        Debug.Log(Vector3.up * rad);
         foreach(GameObject obj in collisions)
         {
             if(moveState == 1 && obj.CompareTag("Up"))
@@ -135,8 +134,5 @@ public class PacMan : MonoBehaviour
             if (obj.CompareTag("Side")) transform.position = new Vector3(transform.position.x, obj.transform.position.y);
             if (obj.CompareTag("Up")) transform.position = new Vector3(obj.transform.position.x, transform.position.y);
         }
-    }
-    public void deeznuts(){
-        Debug.Log("deeznuts");
     }
 }
