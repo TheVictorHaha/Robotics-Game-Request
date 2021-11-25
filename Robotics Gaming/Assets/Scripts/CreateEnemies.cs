@@ -7,7 +7,6 @@ public class CreateEnemies : MonoBehaviour
     // Start is called before the first frame update
     public int numEnemies = 20;
     public GameObject enemy;
-    public List<GameObject> enemies;
     SpriteRenderer sr;
     void Start()
     {   
@@ -19,8 +18,6 @@ public class CreateEnemies : MonoBehaviour
         float buffer = enemy.transform.localScale.x/2;
         width -= buffer*2;
         float dif = width/(numEnemies-1);
-        enemies = new List<GameObject>();
-
         Vector3 difVect = new Vector3(dif, 0, 0);
         Vector3 pos = new Vector3(xPos-width/2, yPos, 0);
 
@@ -29,7 +26,7 @@ public class CreateEnemies : MonoBehaviour
             go.transform.position = pos;
             pos += difVect;
             // go.transform.parent = gameObject.transform;
-            enemies.Add(go);
+            GameObject.Find("Manager").GetComponent<PacManager>().enemies.Add(go);
         }
     }
 
