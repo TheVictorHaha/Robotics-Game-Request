@@ -10,7 +10,7 @@ public class EnemyBehavior : MonoBehaviour
 
     public GameObject bullet;
 
-    public float shotInterval = 3.0f;
+    public float shotInterval = 5.0f;
 
     void Start() {
         target = GameObject.Find("Player");
@@ -19,23 +19,23 @@ public class EnemyBehavior : MonoBehaviour
     void Update() {
         enemiesScript = GetComponent<CreateEnemies>();
         enemies = enemiesScript.enemies;
-        float lastShot = 0.0f;
+        shotInterval -= Time.deltaTime;
         foreach (GameObject enemy in enemies){
             look(enemy, target);
-            if (Time.time - lastShot > shotInterval){
-                Debug.Log("Time!");
-                shoot(enemy, target);
-                lastShot = Time.time;
+            if (shotInterval <= 0){
+                foreach (GameObject enemy2 in enemies){
+                    shoot(enemy2, target, 10f);
+                    shotInterval = 5.0f;
+                }
             }
         }
     }
-    public void shoot(GameObject enemy, GameObject target){
+    public void shoot(GameObject enemy, GameObject target, float speed){
         GameObject tb = Instantiate(bullet);
         tb.transform.SetParent(enemy.transform);
-        tb.layer = 10;
         tb.transform.position = enemy.transform.position;
-        Vector3 dir = transform.forward;
-        dir = dir.normalized;
+        tb.transform.rotation = enemy.transform.rotation;
+        tb.transform.Rotate(new Vector3(0,0,-90));
     }
 
     public void look(GameObject enemy, GameObject target){
