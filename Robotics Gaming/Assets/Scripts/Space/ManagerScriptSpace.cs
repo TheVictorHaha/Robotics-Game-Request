@@ -5,7 +5,6 @@ using UnityEngine;
 public class ManagerScriptSpace : MonoBehaviour
 {
     public GameObject cam;
-    public GameObject circ;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,16 +14,13 @@ public class ManagerScriptSpace : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            circ.transform.position = randPos();
-        }
+
     }
 
     public Vector3 randPos()
     {
-        var upperLeftScreen = new Vector3(0, Screen.height);
-        var upperRightScreen = new Vector3(Screen.width, Screen.height);
+        var upperLeftScreen = new Vector3(0, Screen.height * 3 / 4);
+        var upperRightScreen = new Vector3(Screen.width, Screen.height * 3 / 4);
         var lowerLeftScreen = new Vector3(0, 0);
         var lowerRightScreen = new Vector3(Screen.width, 0);
 
