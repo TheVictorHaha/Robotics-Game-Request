@@ -136,4 +136,7 @@ public class PacMan : MonoBehaviour
             if (obj.CompareTag("Up")) transform.position = new Vector3(obj.transform.position.x, transform.position.y);
         }
     }
+    public void deeznuts(){
+        Debug.Log("deeznuts");
+    }
 }

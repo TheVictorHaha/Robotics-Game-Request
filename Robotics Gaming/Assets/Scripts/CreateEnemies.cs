@@ -28,7 +28,7 @@ public class CreateEnemies : MonoBehaviour
             GameObject go = Instantiate(enemy);
             go.transform.position = pos;
             pos += difVect;
-            go.transform.parent = gameObject.transform;
+            // go.transform.parent = gameObject.transform;
         }
     }
 
