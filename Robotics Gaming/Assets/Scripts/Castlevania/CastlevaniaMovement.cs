@@ -7,6 +7,7 @@ public class CastlevaniaMovement : MonoBehaviour
     public float jumpForce = 5.0f;
     public float speed = 5.0f;
     public float grav = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +19,9 @@ public class CastlevaniaMovement : MonoBehaviour
     {
         control();
     }
-
     private void OnCollisionStay2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject);
+        //Debug.Log(collision.gameObject);
         grav = 1.0f;
     }
 
@@ -37,9 +37,16 @@ public class CastlevaniaMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            grav = 1.0f;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            groundDetect script = GameObject.Find("GroundDetect").GetComponent<groundDetect>();
+            int jumps = script.jumps;
+
+            if (jumps > 0) 
+            {
+                script.jumps--;
+                grav = 1.0f;
+                GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            }
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
