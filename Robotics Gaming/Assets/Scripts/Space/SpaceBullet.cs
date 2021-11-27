@@ -19,7 +19,6 @@ public class SpaceBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(oriented);
         if (!oriented) {
             dir = point - transform.position;
             foreach (Transform child in transform)
@@ -27,9 +26,6 @@ public class SpaceBullet : MonoBehaviour
                 child.transform.right = point - transform.position;
             }
             oriented = true;
-        } else
-        {
-            Debug.Log("testes");
         }
         transform.Translate(dir.normalized * speed * Time.deltaTime);
         if ((point - transform.position).magnitude <= 0.01f)

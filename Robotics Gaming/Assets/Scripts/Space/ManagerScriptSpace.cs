@@ -5,6 +5,8 @@ using UnityEngine;
 public class ManagerScriptSpace : MonoBehaviour
 {
     public GameObject cam;
+    public List<GameObject> fires;
+    public GameObject lightning;
     // Start is called before the first frame update
     void Start()
     {
